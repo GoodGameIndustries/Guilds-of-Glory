@@ -1,5 +1,6 @@
 package com.GGI.GoG;
 
+import com.GGI.GoG.Screens.GameScreen;
 import com.badlogic.gdx.ApplicationAdapter;
 import com.badlogic.gdx.Game;
 import com.badlogic.gdx.Gdx;

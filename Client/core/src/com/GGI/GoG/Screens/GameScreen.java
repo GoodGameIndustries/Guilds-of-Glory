@@ -1,6 +1,7 @@
 package com.GGI.GoG.Screens;
 
 import com.GGI.GoG.GoG;
+import com.GGI.GoG.Game.World;
 import com.badlogic.gdx.Gdx;
 import com.badlogic.gdx.InputProcessor;
 import com.badlogic.gdx.Screen;
@@ -10,25 +11,27 @@ public class GameScreen implements Screen,InputProcessor{
 	
 	public GoG g;
 	public float w=Gdx.graphics.getWidth(),h=Gdx.graphics.getHeight();
-	public int gridX=50,gridY=50;
-	public float gridSize;
+	public World world;
 	
+	//ME
+	int id=0;
 	public GameScreen(GoG g){
 		this.g=g;
+		world = new World();
+		world.addPlayer(id, 0, 0, 0);
 	}
 
 	@Override
 	public void show() {
 		Gdx.input.setInputProcessor(this);
-		gridSize=h/10;
-		
 	}
 
 	@Override
 	public void render(float delta) {
-		Gdx.gl.glClearColor(1, 1, 1, 1);
+		Gdx.gl.glClearColor(0, 0, 0, 1);
 		Gdx.gl.glClear(GL30.GL_COLOR_BUFFER_BIT);
 		
+		world.render(id);
 	}
 
 	@Override
@@ -81,14 +84,16 @@ public class GameScreen implements Screen,InputProcessor{
 
 	@Override
 	public boolean touchDown(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
-		return false;
+		screenY=(int) (h-screenY);
+		return true;
 	}
 
 	@Override
 	public boolean touchUp(int screenX, int screenY, int pointer, int button) {
-		// TODO Auto-generated method stub
-		return false;
+		screenY=(int) (h-screenY);
+		world.movePlayer(id,screenX,screenY);
+		
+		return true;
 	}
 
 	@Override
