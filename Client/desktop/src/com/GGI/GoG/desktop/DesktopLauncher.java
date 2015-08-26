@@ -1,8 +1,8 @@
-package com.GGI.GoG.desktop;
+package com.GGI.GOG.desktop;
 
+import com.GGI.GoG.GoG;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplication;
 import com.badlogic.gdx.backends.lwjgl.LwjglApplicationConfiguration;
-import com.GGI.GoG.GoG;
 
 public class DesktopLauncher {
 	public static void main (String[] arg) {

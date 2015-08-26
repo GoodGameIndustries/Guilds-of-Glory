@@ -1,10 +1,10 @@
-package com.GGI.GoG.android;
+package com.GGI.GOG.android;
 
-import android.os.Bundle;
-
+import com.GGI.GoG.GoG;
 import com.badlogic.gdx.backends.android.AndroidApplication;
 import com.badlogic.gdx.backends.android.AndroidApplicationConfiguration;
-import com.GGI.GoG.GoG;
+
+import android.os.Bundle;
 
 public class AndroidLauncher extends AndroidApplication {
 	@Override

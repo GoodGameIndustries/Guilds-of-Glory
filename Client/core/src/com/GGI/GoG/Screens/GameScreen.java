@@ -18,7 +18,9 @@ public class GameScreen implements Screen,InputProcessor{
 	public GameScreen(GoG g){
 		this.g=g;
 		world = new World();
-		world.addPlayer(id, 0, 0, 0);
+		int dx=(int)Math.random()*50;
+		int dy=(int)Math.random()*50;
+		world.addPlayer(dx, dy);
 	}
 
 	@Override

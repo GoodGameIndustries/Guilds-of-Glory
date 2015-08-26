@@ -1,11 +1,11 @@
-package com.GGI.GoG;
+package com.GGI.GOG;
 
 import org.robovm.apple.foundation.NSAutoreleasePool;
 import org.robovm.apple.uikit.UIApplication;
 
 import com.badlogic.gdx.backends.iosrobovm.IOSApplication;
 import com.badlogic.gdx.backends.iosrobovm.IOSApplicationConfiguration;
-import com.GGI.GoG.GoG;
+import com.GGI.GOG.GoG;
 
 public class IOSLauncher extends IOSApplication.Delegate {
     @Override

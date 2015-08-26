@@ -94,8 +94,8 @@ public class World {
 		
 	}
 
-	public void addPlayer(float x, float y, int dX, int dY){
-		players.add(new Player(x,y,dX,dY,gridSize));
+	public void addPlayer(int dX, int dY){
+		players.add(new Player(dX*gridSize,dY*gridSize,dX,dY,gridSize));
 	}
 
 	public void movePlayer(int id, int screenX, int screenY) {

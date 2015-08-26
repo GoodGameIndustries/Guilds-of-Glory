@@ -1,9 +1,9 @@
-package com.GGI.GoG.client;
+package com.GGI.GOG.client;
 
 import com.badlogic.gdx.ApplicationListener;
 import com.badlogic.gdx.backends.gwt.GwtApplication;
 import com.badlogic.gdx.backends.gwt.GwtApplicationConfiguration;
-import com.GGI.GoG.GoG;
+import com.GGI.GOG.GoG;
 
 public class HtmlLauncher extends GwtApplication {
 

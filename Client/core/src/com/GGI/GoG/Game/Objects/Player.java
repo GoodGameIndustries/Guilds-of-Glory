@@ -9,7 +9,7 @@ import com.badlogic.gdx.graphics.glutils.ShapeRenderer;
 public class Player{
 	public float x,y;
 	public int dX,dY;
-	public float speed = 1;
+	public float speed = 2;
 	public float gridSize;
 	public int id =0;
 	public ShapeRenderer shape;
